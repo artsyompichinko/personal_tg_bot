@@ -6,7 +6,9 @@ bot = telebot.TeleBot(tk) # Вместо tk используй свой токе
 
 @bot.message_handler(commands=['start'])
 def first_use(message):
-    bot.send_message(message.from_user.id, 'test_message')
+    bot.send_message(message.from_user.id, 'Привет, мой псевдоним artsiompichinko. Я пишу на Python 3.\n'
+                                           'В этом боте можно узнать информацию о моих работах и сделать заказ. '
+                                           'Так можно найти мои контакты и оставить заявку на обратную связь')
 
 if __name__ == '__main__':
     while True:
